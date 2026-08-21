@@ -1,0 +1,17 @@
+{
+  "name": "salon-os",
+  "version": "0.1.0",
+  "description": "Salon OS — the AI-Native WhatsApp Operating System for Salons. One salon. One system. Three experiences.",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js",
+    "seed": "node server/seed.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

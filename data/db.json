@@ -1,0 +1,2772 @@
+{
+  "salon": {
+    "id": 1,
+    "name": "Looks Salon",
+    "tagline": "The AI-Native Salon",
+    "address": "G-14, C-Scheme, Jaipur",
+    "phone": "+91 98290 12345",
+    "email": "hello@lookssalon.in",
+    "currency": "₹",
+    "hours": {
+      "open": 10,
+      "close": 21
+    },
+    "plan": "Growth"
+  },
+  "users": [
+    {
+      "id": 1,
+      "role": "owner",
+      "name": "Amit Sharma",
+      "email": "owner@lookssalon.com",
+      "phone": "9829000001",
+      "pass": "owner123"
+    },
+    {
+      "id": 2,
+      "role": "receptionist",
+      "name": "Ritu Verma",
+      "email": "reception@lookssalon.com",
+      "phone": "9829000002",
+      "pass": "reception123"
+    },
+    {
+      "id": 3,
+      "role": "manager",
+      "name": "Varun Mehta",
+      "email": "manager@lookssalon.com",
+      "phone": "9829000003",
+      "pass": "manager123"
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "Rahul Sharma",
+      "phone": "98111 00001",
+      "gender": "M",
+      "language": "Hindi",
+      "birthday": "1990-04-12",
+      "preferredStylistId": 1,
+      "preferredTime": "5–8 PM",
+      "preferredServiceIds": [
+        1,
+        2
+      ],
+      "typicalInterval": 35,
+      "lifetimeValue": 28400,
+      "visitCount": 18,
+      "attendance": 92,
+      "lastVisitAt": "2026-07-20T12:30:00.000Z",
+      "createdAt": "2025-06-27T14:07:40.793Z",
+      "tags": [
+        "vip",
+        "overdue"
+      ],
+      "notes": "Usually visits weekends, books haircut + beard."
+    },
+    {
+      "id": 2,
+      "name": "Neha Gupta",
+      "phone": "98111 00002",
+      "gender": "F",
+      "language": "Hindi",
+      "birthday": "1993-08-19",
+      "preferredStylistId": 3,
+      "preferredTime": "Evening",
+      "preferredServiceIds": [
+        6,
+        7,
+        10
+      ],
+      "typicalInterval": 31,
+      "lifetimeValue": 42800,
+      "visitCount": 26,
+      "attendance": 95,
+      "lastVisitAt": "2026-06-15T13:30:00.000Z",
+      "createdAt": "2024-09-20T14:07:40.793Z",
+      "tags": [
+        "at-risk",
+        "overdue"
+      ],
+      "notes": "High-value. Gap 67d vs normal ~31d. Churn risk HIGH."
+    },
+    {
+      "id": 3,
+      "name": "Arjun Mehta",
+      "phone": "98111 00003",
+      "gender": "M",
+      "language": "Hindi",
+      "birthday": "1995-01-03",
+      "preferredStylistId": 1,
+      "preferredTime": "Morning",
+      "preferredServiceIds": [
+        1
+      ],
+      "typicalInterval": 30,
+      "lifetimeValue": 21000,
+      "visitCount": 12,
+      "attendance": 88,
+      "lastVisitAt": "2026-08-09T05:30:00.000Z",
+      "createdAt": "2025-08-26T14:07:40.793Z",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 4,
+      "name": "Kavya Rao",
+      "phone": "98111 00004",
+      "gender": "F",
+      "language": "English",
+      "birthday": "1991-11-22",
+      "preferredStylistId": 2,
+      "preferredTime": "Weekend",
+      "preferredServiceIds": [
+        6,
+        8
+      ],
+      "typicalInterval": 28,
+      "lifetimeValue": 36000,
+      "visitCount": 20,
+      "attendance": 94,
+      "lastVisitAt": "2026-08-16T11:30:00.000Z",
+      "createdAt": "2025-08-06T14:07:40.793Z",
+      "tags": [
+        "vip"
+      ],
+      "notes": "Prefers Simran. Manicure + pedicure regular."
+    },
+    {
+      "id": 5,
+      "name": "Dev Kapoor",
+      "phone": "98111 00005",
+      "gender": "M",
+      "language": "Hindi",
+      "birthday": "1988-06-09",
+      "preferredStylistId": 4,
+      "preferredTime": "Evening",
+      "preferredServiceIds": [
+        1
+      ],
+      "typicalInterval": 40,
+      "lifetimeValue": 9500,
+      "visitCount": 6,
+      "attendance": 78,
+      "lastVisitAt": "2026-06-22T13:30:00.000Z",
+      "createdAt": "2025-10-05T14:07:40.793Z",
+      "tags": [
+        "overdue"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 6,
+      "name": "Ananya Iyer",
+      "phone": "98111 00006",
+      "gender": "F",
+      "language": "English",
+      "birthday": "1996-02-27",
+      "preferredStylistId": 3,
+      "preferredTime": "Evening",
+      "preferredServiceIds": [
+        6,
+        10
+      ],
+      "typicalInterval": 25,
+      "lifetimeValue": 31000,
+      "visitCount": 17,
+      "attendance": 90,
+      "lastVisitAt": "2026-08-01T12:30:00.000Z",
+      "createdAt": "2025-10-25T14:07:40.793Z",
+      "tags": [
+        "vip"
+      ],
+      "notes": "Occasional bridal client."
+    },
+    {
+      "id": 7,
+      "name": "Rohan Singh",
+      "phone": "98111 00007",
+      "gender": "M",
+      "language": "Hindi",
+      "birthday": "1994-12-30",
+      "preferredStylistId": 1,
+      "preferredTime": "5–8 PM",
+      "preferredServiceIds": [
+        1
+      ],
+      "typicalInterval": 35,
+      "lifetimeValue": 14200,
+      "visitCount": 9,
+      "attendance": 85,
+      "lastVisitAt": "2026-07-14T12:30:00.000Z",
+      "createdAt": "2025-11-14T14:07:40.793Z",
+      "tags": [
+        "overdue"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 8,
+      "name": "Meera Joshi",
+      "phone": "98111 00008",
+      "gender": "F",
+      "language": "Hindi",
+      "birthday": "1992-03-15",
+      "preferredStylistId": 2,
+      "preferredTime": "Afternoon",
+      "preferredServiceIds": [
+        7,
+        8
+      ],
+      "typicalInterval": 45,
+      "lifetimeValue": 6800,
+      "visitCount": 4,
+      "attendance": 82,
+      "lastVisitAt": "2026-08-06T08:30:00.000Z",
+      "createdAt": "2026-04-03T14:07:40.793Z",
+      "tags": [],
+      "notes": "Newer client."
+    },
+    {
+      "id": 9,
+      "name": "Kabir Malhotra",
+      "phone": "98111 00009",
+      "gender": "M",
+      "language": "English",
+      "birthday": "1989-09-25",
+      "preferredStylistId": 4,
+      "preferredTime": "Evening",
+      "preferredServiceIds": [
+        1,
+        2
+      ],
+      "typicalInterval": 28,
+      "lifetimeValue": 18300,
+      "visitCount": 11,
+      "attendance": 91,
+      "lastVisitAt": "2026-08-13T13:30:00.000Z",
+      "createdAt": "2025-10-25T14:07:40.793Z",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 10,
+      "name": "Sana Qureshi",
+      "phone": "98111 00010",
+      "gender": "F",
+      "language": "Hindi",
+      "birthday": "1997-07-05",
+      "preferredStylistId": 3,
+      "preferredTime": "Late evening",
+      "preferredServiceIds": [
+        6,
+        7
+      ],
+      "typicalInterval": 30,
+      "lifetimeValue": 27000,
+      "visitCount": 15,
+      "attendance": 93,
+      "lastVisitAt": "2026-08-19T14:30:00.000Z",
+      "createdAt": "2025-12-04T14:07:40.793Z",
+      "tags": [
+        "vip"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 11,
+      "name": "Zoya Khan",
+      "phone": "98111 00011",
+      "gender": "F",
+      "language": "Hindi",
+      "birthday": "1990-10-11",
+      "preferredStylistId": 2,
+      "preferredTime": "Weekend",
+      "preferredServiceIds": [
+        6,
+        11
+      ],
+      "typicalInterval": 26,
+      "lifetimeValue": 22400,
+      "visitCount": 14,
+      "attendance": 96,
+      "lastVisitAt": "2026-06-27T10:30:00.000Z",
+      "createdAt": "2025-09-15T14:07:40.793Z",
+      "tags": [
+        "at-risk",
+        "overdue"
+      ],
+      "notes": "Gap 55d."
+    },
+    {
+      "id": 12,
+      "name": "Ayan Verma",
+      "phone": "98111 00012",
+      "gender": "M",
+      "language": "Hindi",
+      "birthday": "1998-05-20",
+      "preferredStylistId": 1,
+      "preferredTime": "Morning",
+      "preferredServiceIds": [
+        1,
+        2
+      ],
+      "typicalInterval": 32,
+      "lifetimeValue": 12800,
+      "visitCount": 8,
+      "attendance": 84,
+      "lastVisitAt": "2026-07-19T04:30:00.000Z",
+      "createdAt": "2026-01-13T14:07:40.793Z",
+      "tags": [
+        "overdue"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 13,
+      "name": "Isha Nair",
+      "phone": "98111 00013",
+      "gender": "F",
+      "language": "English",
+      "birthday": "1995-04-02",
+      "preferredStylistId": 3,
+      "preferredTime": "Afternoon",
+      "preferredServiceIds": [
+        8
+      ],
+      "typicalInterval": 42,
+      "lifetimeValue": 7400,
+      "visitCount": 5,
+      "attendance": 80,
+      "lastVisitAt": "2026-08-11T09:30:00.000Z",
+      "createdAt": "2026-02-22T14:07:40.793Z",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 14,
+      "name": "Tanya Bansal",
+      "phone": "98111 00014",
+      "gender": "F",
+      "language": "Hindi",
+      "birthday": "1993-12-08",
+      "preferredStylistId": 2,
+      "preferredTime": "Evening",
+      "preferredServiceIds": [
+        7,
+        8
+      ],
+      "typicalInterval": 29,
+      "lifetimeValue": 15200,
+      "visitCount": 9,
+      "attendance": 89,
+      "lastVisitAt": "2026-07-31T12:30:00.000Z",
+      "createdAt": "2025-12-24T14:07:40.793Z",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 15,
+      "name": "Aditya Rao",
+      "phone": "98111 00015",
+      "gender": "M",
+      "language": "English",
+      "birthday": "1987-02-14",
+      "preferredStylistId": 1,
+      "preferredTime": "Evening",
+      "preferredServiceIds": [
+        1,
+        2,
+        5
+      ],
+      "typicalInterval": 34,
+      "lifetimeValue": 19800,
+      "visitCount": 13,
+      "attendance": 90,
+      "lastVisitAt": "2026-08-15T13:30:00.000Z",
+      "createdAt": "2025-10-15T14:07:40.793Z",
+      "tags": [
+        "vip"
+      ],
+      "notes": "Hair spa regular."
+    },
+    {
+      "id": 16,
+      "name": "Nisha Verma",
+      "phone": "98111 00016",
+      "gender": "F",
+      "language": "Hindi",
+      "birthday": "1992-09-01",
+      "preferredStylistId": 3,
+      "preferredTime": "Evening",
+      "preferredServiceIds": [
+        6,
+        7,
+        10
+      ],
+      "typicalInterval": 27,
+      "lifetimeValue": 26500,
+      "visitCount": 16,
+      "attendance": 95,
+      "lastVisitAt": "2026-08-20T13:30:00.000Z",
+      "createdAt": "2025-06-27T14:07:40.793Z",
+      "tags": [
+        "vip"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 17,
+      "name": "Mitansh Gupta",
+      "phone": "08859049480",
+      "gender": "",
+      "language": "Hindi",
+      "birthday": "",
+      "preferredStylistId": null,
+      "preferredServiceIds": [
+        1
+      ],
+      "typicalInterval": 30,
+      "lifetimeValue": 0,
+      "visitCount": 0,
+      "attendance": 100,
+      "lastVisitAt": null,
+      "createdAt": "2026-08-21T14:12:14.559Z",
+      "tags": [
+        "New"
+      ],
+      "notes": ""
+    }
+  ],
+  "staff": [
+    {
+      "id": 1,
+      "name": "Aman",
+      "role": "Lead Stylist",
+      "services": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        13
+      ],
+      "color": "#5B9DFF"
+    },
+    {
+      "id": 2,
+      "name": "Simran",
+      "role": "Stylist",
+      "services": [
+        1,
+        2,
+        5,
+        6,
+        11,
+        12
+      ],
+      "color": "#3ECF8E"
+    },
+    {
+      "id": 3,
+      "name": "Priya",
+      "role": "Senior Stylist",
+      "services": [
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
+      ],
+      "color": "#FF6B4A"
+    },
+    {
+      "id": 4,
+      "name": "Vikram",
+      "role": "Stylist",
+      "services": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        13
+      ],
+      "color": "#F5B841"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "name": "Haircut",
+      "category": "Hair",
+      "durationMin": 30,
+      "price": 250,
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "name": "Beard Trim",
+      "category": "Grooming",
+      "durationMin": 20,
+      "price": 100,
+      "isActive": true
+    },
+    {
+      "id": 13,
+      "name": "Haircut + Beard",
+      "category": "Hair",
+      "durationMin": 45,
+      "price": 330,
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "name": "Hair Color",
+      "category": "Hair",
+      "durationMin": 120,
+      "price": 1200,
+      "isActive": true
+    },
+    {
+      "id": 4,
+      "name": "Keratin",
+      "category": "Hair",
+      "durationMin": 150,
+      "price": 2500,
+      "isActive": true
+    },
+    {
+      "id": 5,
+      "name": "Hair Spa",
+      "category": "Hair",
+      "durationMin": 60,
+      "price": 800,
+      "isActive": true
+    },
+    {
+      "id": 6,
+      "name": "Facial",
+      "category": "Skin",
+      "durationMin": 60,
+      "price": 900,
+      "isActive": true
+    },
+    {
+      "id": 14,
+      "name": "Skin Treatment",
+      "category": "Skin",
+      "durationMin": 90,
+      "price": 1500,
+      "isActive": true
+    },
+    {
+      "id": 7,
+      "name": "Manicure",
+      "category": "Nails",
+      "durationMin": 45,
+      "price": 400,
+      "isActive": true
+    },
+    {
+      "id": 8,
+      "name": "Pedicure",
+      "category": "Nails",
+      "durationMin": 60,
+      "price": 500,
+      "isActive": true
+    },
+    {
+      "id": 10,
+      "name": "Bridal Makeup",
+      "category": "Makeup",
+      "durationMin": 180,
+      "price": 8000,
+      "isActive": true
+    },
+    {
+      "id": 11,
+      "name": "Threading",
+      "category": "Grooming",
+      "durationMin": 15,
+      "price": 80,
+      "isActive": true
+    },
+    {
+      "id": 12,
+      "name": "Waxing",
+      "category": "Grooming",
+      "durationMin": 40,
+      "price": 500,
+      "isActive": true
+    },
+    {
+      "id": 9,
+      "name": "Head Massage",
+      "category": "Spa",
+      "durationMin": 30,
+      "price": 350,
+      "isActive": true
+    }
+  ],
+  "appointments": [
+    {
+      "id": 1,
+      "customerId": 9,
+      "staffId": 1,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-21T11:30:00.000Z",
+      "end": "2026-08-21T12:50:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "no-show",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 2,
+      "customerId": 9,
+      "staffId": 4,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-21T11:00:00.000Z",
+      "end": "2026-08-21T12:20:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "no-show",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 3,
+      "customerId": 1,
+      "staffId": 3,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-21T14:00:00.000Z",
+      "end": "2026-08-21T15:20:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "no-show",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 4,
+      "customerId": 12,
+      "staffId": 1,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-21T10:00:00.000Z",
+      "end": "2026-08-21T11:20:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "cancelled",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 5,
+      "customerId": 10,
+      "staffId": 3,
+      "serviceIds": [
+        6,
+        7
+      ],
+      "start": "2026-08-21T07:00:00.000Z",
+      "end": "2026-08-21T09:15:00.000Z",
+      "durationMin": 135,
+      "price": 1300,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "cancelled",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 6,
+      "customerId": 12,
+      "staffId": 1,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-21T05:00:00.000Z",
+      "end": "2026-08-21T06:20:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "pending"
+    },
+    {
+      "id": 7,
+      "customerId": 6,
+      "staffId": 3,
+      "serviceIds": [
+        6,
+        10
+      ],
+      "start": "2026-08-21T10:00:00.000Z",
+      "end": "2026-08-21T14:30:00.000Z",
+      "durationMin": 270,
+      "price": 8900,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 8,
+      "customerId": 12,
+      "staffId": 2,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-21T10:30:00.000Z",
+      "end": "2026-08-21T11:50:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 9,
+      "customerId": 13,
+      "staffId": 1,
+      "serviceIds": [
+        8
+      ],
+      "start": "2026-08-21T11:00:00.000Z",
+      "end": "2026-08-21T12:30:00.000Z",
+      "durationMin": 90,
+      "price": 500,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "pending"
+    },
+    {
+      "id": 10,
+      "customerId": 5,
+      "staffId": 3,
+      "serviceIds": [
+        1
+      ],
+      "start": "2026-08-21T14:30:00.000Z",
+      "end": "2026-08-21T15:30:00.000Z",
+      "durationMin": 60,
+      "price": 250,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 11,
+      "customerId": 12,
+      "staffId": 1,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-21T07:00:00.000Z",
+      "end": "2026-08-21T08:20:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 12,
+      "customerId": 14,
+      "staffId": 3,
+      "serviceIds": [
+        7,
+        8
+      ],
+      "start": "2026-08-21T04:30:00.000Z",
+      "end": "2026-08-21T06:45:00.000Z",
+      "durationMin": 135,
+      "price": 900,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 13,
+      "customerId": 6,
+      "staffId": 3,
+      "serviceIds": [
+        6,
+        10
+      ],
+      "start": "2026-08-21T11:00:00.000Z",
+      "end": "2026-08-21T15:30:00.000Z",
+      "durationMin": 270,
+      "price": 8900,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 14,
+      "customerId": 14,
+      "staffId": 2,
+      "serviceIds": [
+        7,
+        8
+      ],
+      "start": "2026-08-21T12:30:00.000Z",
+      "end": "2026-08-21T14:45:00.000Z",
+      "durationMin": 135,
+      "price": 900,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "pending"
+    },
+    {
+      "id": 15,
+      "customerId": 2,
+      "staffId": 4,
+      "serviceIds": [
+        6,
+        7
+      ],
+      "start": "2026-08-21T12:00:00.000Z",
+      "end": "2026-08-21T14:15:00.000Z",
+      "durationMin": 135,
+      "price": 1300,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "pending"
+    },
+    {
+      "id": 16,
+      "customerId": 9,
+      "staffId": 3,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-21T12:30:00.000Z",
+      "end": "2026-08-21T13:50:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 17,
+      "customerId": 13,
+      "staffId": 4,
+      "serviceIds": [
+        8
+      ],
+      "start": "2026-08-21T13:00:00.000Z",
+      "end": "2026-08-21T14:30:00.000Z",
+      "durationMin": 90,
+      "price": 500,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 18,
+      "customerId": 4,
+      "staffId": 2,
+      "serviceIds": [
+        6,
+        8
+      ],
+      "start": "2026-08-21T06:00:00.000Z",
+      "end": "2026-08-21T08:30:00.000Z",
+      "durationMin": 150,
+      "price": 1400,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "pending"
+    },
+    {
+      "id": 19,
+      "customerId": 1,
+      "staffId": 1,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-21T04:30:00.000Z",
+      "end": "2026-08-21T05:50:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 20,
+      "customerId": 16,
+      "staffId": 3,
+      "serviceIds": [
+        6,
+        7
+      ],
+      "start": "2026-08-21T09:30:00.000Z",
+      "end": "2026-08-21T11:45:00.000Z",
+      "durationMin": 135,
+      "price": 1300,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 21,
+      "customerId": 9,
+      "staffId": 4,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-21T10:30:00.000Z",
+      "end": "2026-08-21T11:50:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 22,
+      "customerId": 9,
+      "staffId": 1,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-21T14:00:00.000Z",
+      "end": "2026-08-21T15:20:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "arrived",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 23,
+      "customerId": 12,
+      "staffId": 1,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-21T12:30:00.000Z",
+      "end": "2026-08-21T13:50:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 24,
+      "customerId": 2,
+      "staffId": 2,
+      "serviceIds": [
+        6,
+        7
+      ],
+      "start": "2026-08-21T04:30:00.000Z",
+      "end": "2026-08-21T06:45:00.000Z",
+      "durationMin": 135,
+      "price": 1300,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "pending"
+    },
+    {
+      "id": 25,
+      "customerId": 1,
+      "staffId": 4,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-21T08:30:00.000Z",
+      "end": "2026-08-21T09:50:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 26,
+      "customerId": 15,
+      "staffId": 1,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-21T11:30:00.000Z",
+      "end": "2026-08-21T12:50:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 27,
+      "customerId": 13,
+      "staffId": 3,
+      "serviceIds": [
+        8
+      ],
+      "start": "2026-08-21T05:00:00.000Z",
+      "end": "2026-08-21T06:30:00.000Z",
+      "durationMin": 90,
+      "price": 500,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 28,
+      "customerId": 7,
+      "staffId": 1,
+      "serviceIds": [
+        1
+      ],
+      "start": "2026-08-21T09:00:00.000Z",
+      "end": "2026-08-21T10:00:00.000Z",
+      "durationMin": 60,
+      "price": 250,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "pending"
+    },
+    {
+      "id": 29,
+      "customerId": 14,
+      "staffId": 1,
+      "serviceIds": [
+        7,
+        8
+      ],
+      "start": "2026-08-21T14:30:00.000Z",
+      "end": "2026-08-21T16:45:00.000Z",
+      "durationMin": 135,
+      "price": 900,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 30,
+      "customerId": 3,
+      "staffId": 1,
+      "serviceIds": [
+        1
+      ],
+      "start": "2026-08-21T12:00:00.000Z",
+      "end": "2026-08-21T13:00:00.000Z",
+      "durationMin": 60,
+      "price": 250,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "pending"
+    },
+    {
+      "id": 31,
+      "customerId": 10,
+      "staffId": 2,
+      "serviceIds": [
+        6,
+        7
+      ],
+      "start": "2026-08-21T08:30:00.000Z",
+      "end": "2026-08-21T10:45:00.000Z",
+      "durationMin": 135,
+      "price": 1300,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 32,
+      "customerId": 5,
+      "staffId": 4,
+      "serviceIds": [
+        1
+      ],
+      "start": "2026-08-21T14:00:00.000Z",
+      "end": "2026-08-21T15:00:00.000Z",
+      "durationMin": 60,
+      "price": 250,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "arrived",
+      "confirmation": "pending"
+    },
+    {
+      "id": 33,
+      "customerId": 1,
+      "staffId": 1,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-21T13:00:00.000Z",
+      "end": "2026-08-21T14:20:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 34,
+      "customerId": 8,
+      "staffId": 2,
+      "serviceIds": [
+        7,
+        8
+      ],
+      "start": "2026-08-21T11:00:00.000Z",
+      "end": "2026-08-21T13:15:00.000Z",
+      "durationMin": 135,
+      "price": 900,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 35,
+      "customerId": 7,
+      "staffId": 1,
+      "serviceIds": [
+        1
+      ],
+      "start": "2026-08-21T08:30:00.000Z",
+      "end": "2026-08-21T09:30:00.000Z",
+      "durationMin": 60,
+      "price": 250,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "pending"
+    },
+    {
+      "id": 36,
+      "customerId": 14,
+      "staffId": 2,
+      "serviceIds": [
+        7,
+        8
+      ],
+      "start": "2026-08-21T09:00:00.000Z",
+      "end": "2026-08-21T11:15:00.000Z",
+      "durationMin": 135,
+      "price": 900,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "pending"
+    },
+    {
+      "id": 37,
+      "customerId": 5,
+      "staffId": 4,
+      "serviceIds": [
+        1
+      ],
+      "start": "2026-08-21T13:30:00.000Z",
+      "end": "2026-08-21T14:30:00.000Z",
+      "durationMin": 60,
+      "price": 250,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "arrived",
+      "confirmation": "pending"
+    },
+    {
+      "id": 38,
+      "customerId": 11,
+      "staffId": 2,
+      "serviceIds": [
+        6,
+        11
+      ],
+      "start": "2026-08-21T09:00:00.000Z",
+      "end": "2026-08-21T10:45:00.000Z",
+      "durationMin": 105,
+      "price": 980,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 39,
+      "customerId": 13,
+      "staffId": 4,
+      "serviceIds": [
+        8
+      ],
+      "start": "2026-08-21T09:30:00.000Z",
+      "end": "2026-08-21T11:00:00.000Z",
+      "durationMin": 90,
+      "price": 500,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 40,
+      "customerId": 7,
+      "staffId": 4,
+      "serviceIds": [
+        1
+      ],
+      "start": "2026-08-21T10:00:00.000Z",
+      "end": "2026-08-21T11:00:00.000Z",
+      "durationMin": 60,
+      "price": 250,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 41,
+      "customerId": 12,
+      "staffId": 1,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-21T09:30:00.000Z",
+      "end": "2026-08-21T10:50:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "completed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 42,
+      "customerId": 16,
+      "staffId": 3,
+      "serviceIds": [
+        6,
+        7
+      ],
+      "start": "2026-08-21T13:30:00.000Z",
+      "end": "2026-08-21T15:45:00.000Z",
+      "durationMin": 135,
+      "price": 1300,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "in-service",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 43,
+      "customerId": 11,
+      "staffId": 1,
+      "serviceIds": [
+        6,
+        11
+      ],
+      "start": "2026-08-22T09:00:00.000Z",
+      "end": "2026-08-22T10:45:00.000Z",
+      "durationMin": 105,
+      "price": 980,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 44,
+      "customerId": 2,
+      "staffId": 3,
+      "serviceIds": [
+        6,
+        7
+      ],
+      "start": "2026-08-22T13:00:00.000Z",
+      "end": "2026-08-22T15:15:00.000Z",
+      "durationMin": 135,
+      "price": 1300,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 45,
+      "customerId": 12,
+      "staffId": 1,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-22T06:00:00.000Z",
+      "end": "2026-08-22T07:20:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "pending"
+    },
+    {
+      "id": 46,
+      "customerId": 5,
+      "staffId": 1,
+      "serviceIds": [
+        1
+      ],
+      "start": "2026-08-22T10:00:00.000Z",
+      "end": "2026-08-22T11:00:00.000Z",
+      "durationMin": 60,
+      "price": 250,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 47,
+      "customerId": 9,
+      "staffId": 4,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-22T09:00:00.000Z",
+      "end": "2026-08-22T10:20:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 48,
+      "customerId": 12,
+      "staffId": 3,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-22T12:00:00.000Z",
+      "end": "2026-08-22T13:20:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 49,
+      "customerId": 14,
+      "staffId": 4,
+      "serviceIds": [
+        7,
+        8
+      ],
+      "start": "2026-08-22T08:30:00.000Z",
+      "end": "2026-08-22T10:45:00.000Z",
+      "durationMin": 135,
+      "price": 900,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 50,
+      "customerId": 13,
+      "staffId": 3,
+      "serviceIds": [
+        8
+      ],
+      "start": "2026-08-22T09:00:00.000Z",
+      "end": "2026-08-22T10:30:00.000Z",
+      "durationMin": 90,
+      "price": 500,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "pending"
+    },
+    {
+      "id": 51,
+      "customerId": 9,
+      "staffId": 4,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-22T06:00:00.000Z",
+      "end": "2026-08-22T07:20:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 52,
+      "customerId": 5,
+      "staffId": 4,
+      "serviceIds": [
+        1
+      ],
+      "start": "2026-08-22T13:30:00.000Z",
+      "end": "2026-08-22T14:30:00.000Z",
+      "durationMin": 60,
+      "price": 250,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 53,
+      "customerId": 11,
+      "staffId": 2,
+      "serviceIds": [
+        6,
+        11
+      ],
+      "start": "2026-08-22T04:30:00.000Z",
+      "end": "2026-08-22T06:15:00.000Z",
+      "durationMin": 105,
+      "price": 980,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "pending"
+    },
+    {
+      "id": 54,
+      "customerId": 6,
+      "staffId": 3,
+      "serviceIds": [
+        6,
+        10
+      ],
+      "start": "2026-08-22T14:30:00.000Z",
+      "end": "2026-08-22T19:00:00.000Z",
+      "durationMin": 270,
+      "price": 8900,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 55,
+      "customerId": 8,
+      "staffId": 2,
+      "serviceIds": [
+        7,
+        8
+      ],
+      "start": "2026-08-22T07:00:00.000Z",
+      "end": "2026-08-22T09:15:00.000Z",
+      "durationMin": 135,
+      "price": 900,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "pending"
+    },
+    {
+      "id": 56,
+      "customerId": 1,
+      "staffId": 1,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-22T12:00:00.000Z",
+      "end": "2026-08-22T13:20:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 57,
+      "customerId": 6,
+      "staffId": 3,
+      "serviceIds": [
+        6,
+        10
+      ],
+      "start": "2026-08-22T13:00:00.000Z",
+      "end": "2026-08-22T17:30:00.000Z",
+      "durationMin": 270,
+      "price": 8900,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 58,
+      "customerId": 12,
+      "staffId": 1,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-22T05:00:00.000Z",
+      "end": "2026-08-22T06:20:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 59,
+      "customerId": 2,
+      "staffId": 2,
+      "serviceIds": [
+        6,
+        7
+      ],
+      "start": "2026-08-22T11:30:00.000Z",
+      "end": "2026-08-22T13:45:00.000Z",
+      "durationMin": 135,
+      "price": 1300,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 60,
+      "customerId": 13,
+      "staffId": 3,
+      "serviceIds": [
+        8
+      ],
+      "start": "2026-08-22T12:30:00.000Z",
+      "end": "2026-08-22T14:00:00.000Z",
+      "durationMin": 90,
+      "price": 500,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "pending"
+    },
+    {
+      "id": 61,
+      "customerId": 2,
+      "staffId": 1,
+      "serviceIds": [
+        6,
+        7
+      ],
+      "start": "2026-08-22T04:30:00.000Z",
+      "end": "2026-08-22T06:45:00.000Z",
+      "durationMin": 135,
+      "price": 1300,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 62,
+      "customerId": 3,
+      "staffId": 1,
+      "serviceIds": [
+        1
+      ],
+      "start": "2026-08-22T11:00:00.000Z",
+      "end": "2026-08-22T12:00:00.000Z",
+      "durationMin": 60,
+      "price": 250,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 63,
+      "customerId": 9,
+      "staffId": 3,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-22T08:30:00.000Z",
+      "end": "2026-08-22T09:50:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 64,
+      "customerId": 6,
+      "staffId": 1,
+      "serviceIds": [
+        6,
+        10
+      ],
+      "start": "2026-08-22T13:00:00.000Z",
+      "end": "2026-08-22T17:30:00.000Z",
+      "durationMin": 270,
+      "price": 8900,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "pending"
+    },
+    {
+      "id": 65,
+      "customerId": 6,
+      "staffId": 3,
+      "serviceIds": [
+        6,
+        10
+      ],
+      "start": "2026-08-22T12:30:00.000Z",
+      "end": "2026-08-22T17:00:00.000Z",
+      "durationMin": 270,
+      "price": 8900,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "pending"
+    },
+    {
+      "id": 66,
+      "customerId": 3,
+      "staffId": 2,
+      "serviceIds": [
+        1
+      ],
+      "start": "2026-08-22T08:30:00.000Z",
+      "end": "2026-08-22T09:30:00.000Z",
+      "durationMin": 60,
+      "price": 250,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "pending"
+    },
+    {
+      "id": 67,
+      "customerId": 16,
+      "staffId": 1,
+      "serviceIds": [
+        6,
+        7
+      ],
+      "start": "2026-08-22T14:30:00.000Z",
+      "end": "2026-08-22T16:45:00.000Z",
+      "durationMin": 135,
+      "price": 1300,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 68,
+      "customerId": 16,
+      "staffId": 3,
+      "serviceIds": [
+        6,
+        7
+      ],
+      "start": "2026-08-22T09:30:00.000Z",
+      "end": "2026-08-22T11:45:00.000Z",
+      "durationMin": 135,
+      "price": 1300,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 69,
+      "customerId": 7,
+      "staffId": 4,
+      "serviceIds": [
+        1
+      ],
+      "start": "2026-08-22T07:00:00.000Z",
+      "end": "2026-08-22T08:00:00.000Z",
+      "durationMin": 60,
+      "price": 250,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "pending"
+    },
+    {
+      "id": 70,
+      "customerId": 2,
+      "staffId": 3,
+      "serviceIds": [
+        6,
+        7
+      ],
+      "start": "2026-08-22T11:30:00.000Z",
+      "end": "2026-08-22T13:45:00.000Z",
+      "durationMin": 135,
+      "price": 1300,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 71,
+      "customerId": 11,
+      "staffId": 4,
+      "serviceIds": [
+        6,
+        11
+      ],
+      "start": "2026-08-22T05:00:00.000Z",
+      "end": "2026-08-22T06:45:00.000Z",
+      "durationMin": 105,
+      "price": 980,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 72,
+      "customerId": 1,
+      "staffId": 1,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-22T13:00:00.000Z",
+      "end": "2026-08-22T14:20:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 73,
+      "customerId": 8,
+      "staffId": 2,
+      "serviceIds": [
+        7,
+        8
+      ],
+      "start": "2026-08-23T08:30:00.000Z",
+      "end": "2026-08-23T10:45:00.000Z",
+      "durationMin": 135,
+      "price": 900,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 74,
+      "customerId": 12,
+      "staffId": 4,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-23T10:00:00.000Z",
+      "end": "2026-08-23T11:20:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 75,
+      "customerId": 8,
+      "staffId": 1,
+      "serviceIds": [
+        7,
+        8
+      ],
+      "start": "2026-08-23T05:00:00.000Z",
+      "end": "2026-08-23T07:15:00.000Z",
+      "durationMin": 135,
+      "price": 900,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "pending"
+    },
+    {
+      "id": 76,
+      "customerId": 5,
+      "staffId": 4,
+      "serviceIds": [
+        1
+      ],
+      "start": "2026-08-23T09:30:00.000Z",
+      "end": "2026-08-23T10:30:00.000Z",
+      "durationMin": 60,
+      "price": 250,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 77,
+      "customerId": 6,
+      "staffId": 3,
+      "serviceIds": [
+        6,
+        10
+      ],
+      "start": "2026-08-23T10:00:00.000Z",
+      "end": "2026-08-23T14:30:00.000Z",
+      "durationMin": 270,
+      "price": 8900,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 78,
+      "customerId": 3,
+      "staffId": 1,
+      "serviceIds": [
+        1
+      ],
+      "start": "2026-08-23T10:30:00.000Z",
+      "end": "2026-08-23T11:30:00.000Z",
+      "durationMin": 60,
+      "price": 250,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 79,
+      "customerId": 12,
+      "staffId": 1,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-23T13:30:00.000Z",
+      "end": "2026-08-23T14:50:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "pending"
+    },
+    {
+      "id": 80,
+      "customerId": 6,
+      "staffId": 1,
+      "serviceIds": [
+        6,
+        10
+      ],
+      "start": "2026-08-23T09:30:00.000Z",
+      "end": "2026-08-23T14:00:00.000Z",
+      "durationMin": 270,
+      "price": 8900,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 81,
+      "customerId": 3,
+      "staffId": 3,
+      "serviceIds": [
+        1
+      ],
+      "start": "2026-08-23T09:00:00.000Z",
+      "end": "2026-08-23T10:00:00.000Z",
+      "durationMin": 60,
+      "price": 250,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "pending"
+    },
+    {
+      "id": 82,
+      "customerId": 14,
+      "staffId": 2,
+      "serviceIds": [
+        7,
+        8
+      ],
+      "start": "2026-08-23T09:30:00.000Z",
+      "end": "2026-08-23T11:45:00.000Z",
+      "durationMin": 135,
+      "price": 900,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 83,
+      "customerId": 16,
+      "staffId": 3,
+      "serviceIds": [
+        6,
+        7
+      ],
+      "start": "2026-08-23T12:00:00.000Z",
+      "end": "2026-08-23T14:15:00.000Z",
+      "durationMin": 135,
+      "price": 1300,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "pending"
+    },
+    {
+      "id": 84,
+      "customerId": 5,
+      "staffId": 2,
+      "serviceIds": [
+        1
+      ],
+      "start": "2026-08-23T10:30:00.000Z",
+      "end": "2026-08-23T11:30:00.000Z",
+      "durationMin": 60,
+      "price": 250,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 85,
+      "customerId": 2,
+      "staffId": 1,
+      "serviceIds": [
+        6,
+        7
+      ],
+      "start": "2026-08-23T13:00:00.000Z",
+      "end": "2026-08-23T15:15:00.000Z",
+      "durationMin": 135,
+      "price": 1300,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 86,
+      "customerId": 9,
+      "staffId": 4,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-23T14:30:00.000Z",
+      "end": "2026-08-23T15:50:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 87,
+      "customerId": 16,
+      "staffId": 3,
+      "serviceIds": [
+        6,
+        7
+      ],
+      "start": "2026-08-23T14:00:00.000Z",
+      "end": "2026-08-23T16:15:00.000Z",
+      "durationMin": 135,
+      "price": 1300,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 88,
+      "customerId": 1,
+      "staffId": 2,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-23T09:00:00.000Z",
+      "end": "2026-08-23T10:20:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 89,
+      "customerId": 13,
+      "staffId": 3,
+      "serviceIds": [
+        8
+      ],
+      "start": "2026-08-23T12:00:00.000Z",
+      "end": "2026-08-23T13:30:00.000Z",
+      "durationMin": 90,
+      "price": 500,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 90,
+      "customerId": 6,
+      "staffId": 1,
+      "serviceIds": [
+        6,
+        10
+      ],
+      "start": "2026-08-23T11:00:00.000Z",
+      "end": "2026-08-23T15:30:00.000Z",
+      "durationMin": 270,
+      "price": 8900,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 91,
+      "customerId": 12,
+      "staffId": 1,
+      "serviceIds": [
+        1,
+        2
+      ],
+      "start": "2026-08-23T14:00:00.000Z",
+      "end": "2026-08-23T15:20:00.000Z",
+      "durationMin": 80,
+      "price": 350,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 92,
+      "customerId": 7,
+      "staffId": 4,
+      "serviceIds": [
+        1
+      ],
+      "start": "2026-08-23T09:00:00.000Z",
+      "end": "2026-08-23T10:00:00.000Z",
+      "durationMin": 60,
+      "price": 250,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 93,
+      "customerId": 4,
+      "staffId": 2,
+      "serviceIds": [
+        6,
+        8
+      ],
+      "start": "2026-08-23T11:00:00.000Z",
+      "end": "2026-08-23T13:30:00.000Z",
+      "durationMin": 150,
+      "price": 1400,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    },
+    {
+      "id": 94,
+      "customerId": 7,
+      "staffId": 2,
+      "serviceIds": [
+        1
+      ],
+      "start": "2026-08-23T06:30:00.000Z",
+      "end": "2026-08-23T07:30:00.000Z",
+      "durationMin": 60,
+      "price": 250,
+      "notes": "",
+      "source": "AI",
+      "createdAt": "2026-08-15T03:30:00.000Z",
+      "status": "confirmed",
+      "confirmation": "confirmed"
+    }
+  ],
+  "conversations": [
+    {
+      "id": 1,
+      "customerId": 1,
+      "channel": "WhatsApp",
+      "status": "needs-action",
+      "lastMessage": "Aman 5:30 pls book",
+      "lastAt": "2026-08-21T12:30:00.000Z",
+      "aiSuggestion": "Book 5:30 PM with Aman",
+      "unread": 1,
+      "messages": [
+        {
+          "id": 1,
+          "from": "customer",
+          "text": "Hey, can I get a haircut tomorrow?",
+          "at": -1
+        },
+        {
+          "id": 2,
+          "from": "ai",
+          "text": "Hi Rahul! Aman is available tomorrow at 5:30 PM or 7:00 PM. Which works for you?",
+          "at": -1
+        },
+        {
+          "id": 3,
+          "from": "customer",
+          "text": "Aman 5:30 pls book",
+          "at": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "customerId": 2,
+      "channel": "WhatsApp",
+      "status": "needs-action",
+      "lastMessage": "Priya has Thursday 6 PM. Shall I book?",
+      "lastAt": "2026-08-21T12:30:00.000Z",
+      "aiSuggestion": "Book Thursday 6 PM with Priya",
+      "unread": 1,
+      "messages": [
+        {
+          "id": 1,
+          "from": "ai",
+          "text": "Hey Neha 👋 it has been a while. Want your usual facial + manicure this week?",
+          "at": -2
+        },
+        {
+          "id": 2,
+          "from": "customer",
+          "text": "Can I come Thursday evening?",
+          "at": -1
+        },
+        {
+          "id": 3,
+          "from": "ai",
+          "text": "Priya has Thursday 6 PM. Shall I book?",
+          "at": 0
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "customerId": 4,
+      "channel": "WhatsApp",
+      "status": "booked",
+      "lastMessage": "Done ✅ Simran · Sat · 5 PM · Pedicure ₹500. See you then!",
+      "lastAt": "2026-08-18T12:30:00.000Z",
+      "aiSuggestion": "",
+      "unread": 0,
+      "messages": [
+        {
+          "id": 1,
+          "from": "customer",
+          "text": "Book pedicure Sat 5 PM with Simran pls",
+          "at": -3
+        },
+        {
+          "id": 2,
+          "from": "ai",
+          "text": "Done ✅ Simran · Sat · 5 PM · Pedicure ₹500. See you then!",
+          "at": -3
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "customerId": 15,
+      "channel": "WhatsApp",
+      "status": "booked",
+      "lastMessage": "Booked with Aman, Friday 6:30 PM. Haircut ₹250 + Hair Spa ₹800.",
+      "lastAt": "2026-08-19T12:30:00.000Z",
+      "aiSuggestion": "",
+      "unread": 0,
+      "messages": [
+        {
+          "id": 1,
+          "from": "customer",
+          "text": "Haircut + hair spa Friday",
+          "at": -2
+        },
+        {
+          "id": 2,
+          "from": "ai",
+          "text": "Booked with Aman, Friday 6:30 PM. Haircut ₹250 + Hair Spa ₹800.",
+          "at": -2
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "customerId": 3,
+      "channel": "WhatsApp",
+      "status": "booked",
+      "lastMessage": "Aman tomorrow 10:30 AM. Confirmed ✅",
+      "lastAt": "2026-08-20T12:30:00.000Z",
+      "aiSuggestion": "",
+      "unread": 0,
+      "messages": [
+        {
+          "id": 1,
+          "from": "customer",
+          "text": "Usual haircut tomorrow morning",
+          "at": -1
+        },
+        {
+          "id": 2,
+          "from": "ai",
+          "text": "Aman tomorrow 10:30 AM. Confirmed ✅",
+          "at": -1
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "customerId": 10,
+      "channel": "WhatsApp",
+      "status": "waiting",
+      "lastMessage": "How much for keratin?",
+      "lastAt": "2026-08-21T12:30:00.000Z",
+      "aiSuggestion": "Reply: Keratin ₹2,500 (90–120 min)",
+      "unread": 0,
+      "messages": [
+        {
+          "id": 1,
+          "from": "customer",
+          "text": "How much for keratin?",
+          "at": 0
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "customerId": 6,
+      "channel": "WhatsApp",
+      "status": "reschedule",
+      "lastMessage": "Can we move it to Saturday instead?",
+      "lastAt": "2026-08-21T12:30:00.000Z",
+      "aiSuggestion": "Find Saturday slot with Priya",
+      "unread": 0,
+      "messages": [
+        {
+          "id": 1,
+          "from": "ai",
+          "text": "Ananya, your facial is tomorrow 6 PM.",
+          "at": -1
+        },
+        {
+          "id": 2,
+          "from": "customer",
+          "text": "Can we move it to Saturday instead?",
+          "at": 0
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "customerId": 9,
+      "channel": "WhatsApp",
+      "status": "booked",
+      "lastMessage": "Booked Vikram, Saturday 5 PM. Haircut + Beard ₹330 ✅",
+      "lastAt": "2026-08-19T12:30:00.000Z",
+      "aiSuggestion": "",
+      "unread": 0,
+      "messages": [
+        {
+          "id": 1,
+          "from": "customer",
+          "text": "Haircut + beard with Vikram Saturday",
+          "at": -2
+        },
+        {
+          "id": 2,
+          "from": "ai",
+          "text": "Booked Vikram, Saturday 5 PM. Haircut + Beard ₹330 ✅",
+          "at": -2
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "customerId": 16,
+      "channel": "WhatsApp",
+      "status": "feedback",
+      "lastMessage": "So glad you loved it ❤️ Want to share a quick review?",
+      "lastAt": "2026-08-20T12:30:00.000Z",
+      "aiSuggestion": "Send public review link",
+      "unread": 0,
+      "messages": [
+        {
+          "id": 1,
+          "from": "customer",
+          "text": "Amazing service! ⭐⭐⭐⭐⭐",
+          "at": -1
+        },
+        {
+          "id": 2,
+          "from": "ai",
+          "text": "So glad you loved it ❤️ Want to share a quick review?",
+          "at": -1
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "customerId": 11,
+      "channel": "WhatsApp",
+      "status": "needs-action",
+      "lastMessage": "ok maybe",
+      "lastAt": "2026-08-21T12:30:00.000Z",
+      "aiSuggestion": "Suggest Saturday 4 PM with Simran",
+      "unread": 1,
+      "messages": [
+        {
+          "id": 1,
+          "from": "ai",
+          "text": "Zoya, your usual facial + threading is due. Weekend slots open ❤️",
+          "at": -1
+        },
+        {
+          "id": 2,
+          "from": "customer",
+          "text": "ok maybe",
+          "at": 0
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "customerId": 13,
+      "channel": "WhatsApp",
+      "status": "payment",
+      "lastMessage": "Today bill: ₹500. Pay here 👇",
+      "lastAt": "2026-08-20T12:30:00.000Z",
+      "aiSuggestion": "Send payment link",
+      "unread": 0,
+      "messages": [
+        {
+          "id": 1,
+          "from": "customer",
+          "text": "Pedicure done, please send bill",
+          "at": -1
+        },
+        {
+          "id": 2,
+          "from": "ai",
+          "text": "Today bill: ₹500. Pay here 👇",
+          "at": -1
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "customerId": 7,
+      "channel": "WhatsApp",
+      "status": "waiting",
+      "lastMessage": "Any slot after 8 tonight?",
+      "lastAt": "2026-08-21T12:30:00.000Z",
+      "aiSuggestion": "Show 8 PM availability",
+      "unread": 0,
+      "messages": [
+        {
+          "id": 1,
+          "from": "customer",
+          "text": "Any slot after 8 tonight?",
+          "at": 0
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "customerId": 17,
+      "channel": "WhatsApp",
+      "status": "waiting",
+      "lastMessage": "You don't have any upcoming appointments, so nothing to cancel 😊",
+      "lastAt": "2026-08-21T14:13:21.495Z",
+      "aiSuggestion": "",
+      "unread": 0,
+      "messages": [
+        {
+          "id": 1,
+          "from": "customer",
+          "text": "Hi 👋",
+          "at": "2026-08-21T14:12:28.329Z"
+        },
+        {
+          "id": 2,
+          "from": "ai",
+          "text": "Hey Mitansh 👋 Welcome to Looks Salon!\n\nWhat would you like to do?\n\n• Book an appointment\n• See services\n• Talk to the salon\n\nOr just type naturally — \"Haircut tomorrow evening\" works fine 🙂",
+          "at": "2026-08-21T14:12:28.329Z"
+        },
+        {
+          "id": 3,
+          "from": "customer",
+          "text": "Book my usual",
+          "at": "2026-08-21T14:12:34.044Z"
+        },
+        {
+          "id": 4,
+          "from": "ai",
+          "text": "Your usual is Haircut with Aman. Tomorrow: 11:00 am, 12:00 pm, 12:30 pm. Which works?",
+          "at": "2026-08-21T14:12:34.045Z"
+        },
+        {
+          "id": 5,
+          "from": "customer",
+          "text": "12",
+          "at": "2026-08-21T14:12:47.032Z"
+        },
+        {
+          "id": 6,
+          "from": "ai",
+          "text": "I can book, reschedule or cancel appointments, check prices and send bills. Try:\n• \"Haircut tomorrow evening\"\n• \"Book my usual\"\n• \"How much is keratin?\"",
+          "at": "2026-08-21T14:12:47.032Z"
+        },
+        {
+          "id": 7,
+          "from": "customer",
+          "text": "Haircut tomorrow evening",
+          "at": "2026-08-21T14:12:59.745Z"
+        },
+        {
+          "id": 8,
+          "from": "ai",
+          "text": "Great — Haircut with Aman. Coming up we have 11:00 am, 12:00 pm, 12:30 pm. Which works for you?",
+          "at": "2026-08-21T14:12:59.746Z"
+        },
+        {
+          "id": 9,
+          "from": "customer",
+          "text": "How much is keratin?",
+          "at": "2026-08-21T14:13:03.628Z"
+        },
+        {
+          "id": 10,
+          "from": "ai",
+          "text": "Keratin: ₹2,500 (~150 min). Want me to book it?",
+          "at": "2026-08-21T14:13:03.628Z"
+        },
+        {
+          "id": 11,
+          "from": "customer",
+          "text": "Can I move my appointment?",
+          "at": "2026-08-21T14:13:06.612Z"
+        },
+        {
+          "id": 12,
+          "from": "ai",
+          "text": "I can move your appointment. Free slots tomorrow: 11:00 am, 12:00 pm, 12:30 pm. Which works for you?",
+          "at": "2026-08-21T14:13:06.613Z"
+        },
+        {
+          "id": 13,
+          "from": "customer",
+          "text": "Cancel my appointment",
+          "at": "2026-08-21T14:13:14.078Z"
+        },
+        {
+          "id": 14,
+          "from": "ai",
+          "text": "You don't have any upcoming appointments, so nothing to cancel 😊",
+          "at": "2026-08-21T14:13:14.078Z"
+        },
+        {
+          "id": 15,
+          "from": "customer",
+          "text": "Book my usual",
+          "at": "2026-08-21T14:13:19.661Z"
+        },
+        {
+          "id": 16,
+          "from": "ai",
+          "text": "Your usual is Haircut with Aman. Tomorrow: 11:00 am, 12:00 pm, 12:30 pm. Which works?",
+          "at": "2026-08-21T14:13:19.662Z"
+        },
+        {
+          "id": 17,
+          "from": "customer",
+          "text": "Cancel my appointment",
+          "at": "2026-08-21T14:13:21.495Z"
+        },
+        {
+          "id": 18,
+          "from": "ai",
+          "text": "You don't have any upcoming appointments, so nothing to cancel 😊",
+          "at": "2026-08-21T14:13:21.495Z"
+        }
+      ]
+    }
+  ],
+  "payments": [
+    {
+      "id": 1,
+      "appointmentId": null,
+      "customerId": 16,
+      "amount": 2100,
+      "method": "UPI",
+      "status": "paid",
+      "at": "2026-08-21T07:30:00.000Z",
+      "receiptNo": "R-1042"
+    },
+    {
+      "id": 2,
+      "appointmentId": null,
+      "customerId": 13,
+      "amount": 500,
+      "method": "UPI",
+      "status": "paid",
+      "at": "2026-08-21T10:30:00.000Z",
+      "receiptNo": "R-1043"
+    },
+    {
+      "id": 3,
+      "appointmentId": null,
+      "customerId": 10,
+      "amount": 1200,
+      "method": "Card",
+      "status": "paid",
+      "at": "2026-08-21T06:30:00.000Z",
+      "receiptNo": "R-1041"
+    },
+    {
+      "id": 4,
+      "appointmentId": null,
+      "customerId": 2,
+      "amount": 1850,
+      "method": "UPI",
+      "status": "pending",
+      "at": "2026-08-21T13:30:00.000Z",
+      "receiptNo": "R-1044"
+    },
+    {
+      "id": 5,
+      "appointmentId": null,
+      "customerId": 4,
+      "amount": 1400,
+      "method": "UPI",
+      "status": "paid",
+      "at": "2026-08-20T13:30:00.000Z",
+      "receiptNo": "R-1040"
+    }
+  ],
+  "campaigns": [
+    {
+      "id": 1,
+      "name": "Sunday slots open",
+      "message": "Sunday slots are open ❤️ Want me to find your usual appointment?",
+      "audience": "Weekend visitors · 40+ days inactive",
+      "status": "approved",
+      "sentAt": "2026-08-19T04:30:00.000Z",
+      "sentCount": 17
+    },
+    {
+      "id": 2,
+      "name": "Sunday slots open (Fri Aug 21 2026)",
+      "message": "Sunday slots are open ❤️ Want me to find your usual appointment?",
+      "audience": "15 weekend-regular customers",
+      "status": "sent",
+      "sentAt": "2026-08-21T14:11:06.965Z",
+      "sentCount": 16
+    }
+  ],
+  "actions": [],
+  "insights": [],
+  "meta": {
+    "seededAt": "2026-08-21T14:07:40.794Z",
+    "version": 1
+  }
+}
