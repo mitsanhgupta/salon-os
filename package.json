@@ -1,22 +1,21 @@
 {
-  "name": "salon-os",
+  "name": "direktor",
   "version": "0.1.0",
-  "description": "Salon OS — the AI-Native WhatsApp Operating System for Salons. One salon. One system. Three experiences.",
-  "main": "server/index.js",
+  "description": "Direktor — the AI-Native WhatsApp Operating System for Salons. One salon. One system. Three experiences.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "seed": "node server/seed.js",
-    "server": "node server/index.js"
+    "cleanup:supabase": "node server/cleanup-supabase.js"
   },
   "engines": {
     "node": ">=18"
   },
   "dependencies": {
+    "@clerk/nextjs": "^7.8.0",
     "@supabase/supabase-js": "^2.112.3",
-    "express": "^4.19.2",
+    "dotenv": "^17.4.2",
     "next": "^16.3.2",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
@@ -29,6 +28,8 @@
     "autoprefixer": "^10.5.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.3.2",
     "lucide-react": "^1.33.0",
     "postcss": "^8.5.26",
     "tailwind-merge": "^3.6.0",

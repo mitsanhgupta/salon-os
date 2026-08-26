@@ -1,5 +1,5 @@
 /**
- * lib/utils.ts — Shared utility functions for Salon OS
+  * lib/utils.ts — Shared utility functions for Direktor
  */
 import { type ClassValue } from "clsx";
 import clsx from "clsx";

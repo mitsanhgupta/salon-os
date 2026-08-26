@@ -32,6 +32,8 @@ module.exports = {
         "warning-soft": "#FBF1DE",
         danger: "#D3372C",
         "danger-soft": "#FBEAE8",
+        info: "#1E6FD9",
+        "info-soft": "#E8F0FC",
 
         /* Role accents (dashboards) */
         "role-customer": "#5B9DFF",

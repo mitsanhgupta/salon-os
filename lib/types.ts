@@ -1,256 +1,259 @@
 /**
- * lib/types.ts — Core TypeScript types for Salon OS
- * Based on the existing data model from data/db.json
- * Extended for the Next.js + BookMyShow-inspired UI
+ * lib/types.ts — TypeScript types matching the Supabase schema
+ * (snake_case columns, UUID ids). Real rows, no mock data.
  */
 
-// ===================== Enums =====================
+// ============================ Auth ============================
 
 export type UserRole = "owner" | "receptionist" | "manager" | "staff" | "customer";
-
-export type AppointmentStatus =
-  | "pending"
-  | "confirmed"
-  | "arrived"
-  | "in-service"
-  | "completed"
-  | "cancelled"
-  | "no-show";
-
-export type BookingSource = "receptionist" | "customer" | "whatsapp" | "ai" | "owner";
-
-export type PaymentMethod = "cash" | "card" | "upi" | "online" | "other";
-
-export type PaymentStatus = "pending" | "paid" | "refunded" | "failed";
-
-export type ConversationStatus =
-  | "needs-action"
-  | "waiting"
-  | "booked"
-  | "reschedule"
-  | "payment"
-  | "feedback";
-
-export type InsightType = "churn" | "staffing" | "revenue" | "reactivation" | "no-show" | "demand";
-
-export type InsightSeverity = "low" | "medium" | "high" | "critical";
-
-export type ActionStatus = "pending" | "completed" | "dismissed" | "expired";
-
-export type ActionKind = "warning" | "slot" | "reactivate" | "staffing" | "revenue";
-
-export type MessageDirection = "customer" | "ai" | "staff";
-
-// ===================== Core Entities =====================
+export type UserStatus = "active" | "inactive" | "invited";
 
 export interface Salon {
-  id: number;
+  id: string;
   name: string;
-  tagline: string;
-  address: string;
-  phone: string;
-  email: string;
+  tagline: string | null;
+  address: string | null;
+  phone: string | null;
+  email: string | null;
   currency: string;
-  hours: { open: number; close: number };
+  timezone: string;
+  open_hour: number;
+  close_hour: number;
   plan: string;
-  logo_url?: string;
+  logo_url: string | null;
+  created_at: string;
+  updated_at: string;
 }
 
-export interface User {
-  id: number;
-  role: UserRole;
-  name: string;
-  email: string;
-  phone: string;
+export interface Profile {
+  id: string;
+  full_name: string;
+  phone: string | null;
+  avatar_url: string | null;
+  created_at: string;
+  updated_at: string;
 }
+
+export interface SalonMember {
+  id: string;
+  salon_id: string;
+  user_id: string;
+  role: UserRole;
+  status: UserStatus;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface SessionUser {
+  id: string;
+  full_name: string;
+  role: UserRole;
+  salonId: string;
+  email?: string;
+  phone?: string;
+  avatar_url?: string;
+}
+
+// ============================ Business ============================
 
 export interface Staff {
-  id: number;
+  id: string;
+  salon_id: string;
+  profile_id: string | null;
   name: string;
+  phone: string | null;
+  email: string | null;
   role: string;
-  services: number[];
-  color: string;
-  avatar_url?: string;
-  specialization?: string;
-  commission_percentage?: number;
-  status?: "active" | "inactive";
-  rating?: number;
-  reviewCount?: number;
-  bio?: string;
-  working_hours?: Record<string, { start: string; end: string }>;
-}
-
-export interface Service {
-  id: number;
-  name: string;
-  category: string;
-  durationMin: number;
-  price: number;
-  isActive: boolean;
-  description?: string;
-  image_url?: string;
-  rating?: number;
-  bookCount?: number;
+  specialization: string | null;
+  avatar_url: string | null;
+  color: string | null;
+  commission_pct: number;
+  status: UserStatus;
+  rating: number | null;
+  review_count: number;
+  working_hours: Record<string, unknown> | null;
+  created_at: string;
+  updated_at: string;
 }
 
 export interface Customer {
-  id: number;
+  id: string;
+  salon_id: string;
+  profile_id: string | null;
   name: string;
-  phone: string;
-  gender?: string;
-  language?: string;
-  birthday?: string;
-  preferredStylistId?: number | null;
-  preferredTime?: string;
-  preferredServiceIds?: number[];
-  typicalInterval?: number;
-  lifetimeValue?: number;
-  visitCount?: number;
-  attendance?: number;
-  lastVisitAt?: string;
-  createdAt?: string;
-  tags?: string[];
-  notes?: string;
+  phone: string | null;
+  email: string | null;
+  gender: string | null;
+  language: string | null;
+  birthday: string | null;
+  preferred_stylist_id: string | null;
+  preferred_time: string | null;
+  preferred_service_ids: string[] | null;
+  typical_interval_days: number | null;
+  lifetime_value: number;
+  visit_count: number;
+  attendance_pct: number | null;
+  last_visit_at: string | null;
+  tags: string[] | null;
+  notes: string | null;
+  source: string | null;
+  created_at: string;
+  updated_at: string;
 }
+
+export interface Service {
+  id: string;
+  salon_id: string;
+  name: string;
+  description: string | null;
+  category: string;
+  duration_min: number;
+  price: number;
+  is_active: boolean;
+  image_url: string | null;
+  rating: number | null;
+  book_count: number;
+  created_at: string;
+  updated_at: string;
+}
+
+export type AppointmentStatus =
+  | "pending" | "confirmed" | "arrived" | "in-service" | "completed" | "cancelled" | "no-show";
+export type BookingSource = "receptionist" | "customer" | "whatsapp" | "ai" | "owner";
+export type ConfirmationStatus = "pending" | "confirmed" | "cancelled";
 
 export interface Appointment {
-  id: number;
-  customerId: number;
-  staffId: number;
-  serviceIds: number[];
-  start: string;
-  end: string;
-  durationMin: number;
-  price: number;
-  notes: string;
-  source: BookingSource;
-  createdAt: string;
+  id: string;
+  salon_id: string;
+  customer_id: string;
+  staff_id: string | null;
+  start_time: string;
+  end_time: string;
+  duration_min: number | null;
+  price: number | null;
   status: AppointmentStatus;
-  confirmation: string;
+  source: BookingSource;
+  confirmation: ConfirmationStatus;
+  notes: string | null;
+  created_by: string | null;
+  created_at: string;
+  updated_at: string;
 }
 
-// ===================== Communication =====================
+export type ConversationStatus =
+  | "needs-action" | "waiting" | "booked" | "reschedule" | "payment" | "feedback";
+export type ConversationChannel = "whatsapp" | "sms" | "email";
+export type MessageSender = "customer" | "ai" | "staff" | "receptionist";
 
 export interface Conversation {
-  id: number;
-  customerId: number;
-  channel: string;
+  id: string;
+  salon_id: string;
+  customer_id: string | null;
+  channel: ConversationChannel;
   status: ConversationStatus;
-  lastMessage: string;
-  lastAt: string;
-  aiSuggestion: string;
+  last_message: string | null;
+  last_at: string | null;
+  ai_suggestion: string | null;
   unread: number;
-  messages: Message[];
+  created_at: string;
+  updated_at: string;
 }
 
 export interface Message {
-  id: number;
-  from: MessageDirection;
-  text: string;
-  at: string | number;
+  id: string;
+  conversation_id: string;
+  sender: MessageSender;
+  text: string | null;
+  sent_at: string;
 }
 
-// ===================== Commerce =====================
+// ============================ Marketing ============================
 
-export interface Payment {
-  id: number;
-  appointmentId: number | null;
-  customerId: number;
-  amount: number;
-  method: PaymentMethod;
-  status: PaymentStatus;
-  at: string;
-  receiptNo: string;
-}
+export type CampaignStatus = "draft" | "approved" | "sending" | "sent" | "failed";
+export type CampaignChannel = "whatsapp" | "sms" | "email";
 
 export interface Campaign {
-  id: number;
+  id: string;
+  salon_id: string;
   name: string;
+  objective: string | null;
+  audience_desc: string | null;
   message: string;
-  audience: string;
-  status: string;
-  sentAt: string;
-  sentCount: number;
+  channel: CampaignChannel;
+  status: CampaignStatus;
+  target_count: number | null;
+  sent_count: number;
+  approved_by: string | null;
+  created_at: string;
+  sent_at: string | null;
 }
 
-// ===================== Intelligence =====================
+// ============================ AI ============================
+
+export type InsightType =
+  | "churn" | "staffing" | "revenue" | "reactivation" | "no-show"
+  | "demand" | "inventory" | "campaign" | "overdue_customer";
+export type InsightSeverity = "low" | "medium" | "high" | "critical";
+export type InsightStatus = "active" | "resolved" | "dismissed";
 
 export interface AIInsight {
-  id: number;
+  id: string;
+  salon_id: string;
   type: InsightType;
   severity: InsightSeverity;
   title: string;
-  detail: string;
-  recommendation: string;
+  description: string | null;
+  recommendation: string | null;
+  entity_type: string | null;
+  entity_id: string | null;
+  status: InsightStatus;
+  created_at: string;
+  resolved_at: string | null;
 }
+
+export type ActionStatus = "pending" | "completed" | "dismissed" | "expired";
 
 export interface AIAction {
-  id: number;
-  kind: ActionKind;
+  id: string;
+  salon_id: string;
+  type: string;
   title: string;
-  detail: string;
-  cta: string;
+  description: string | null;
+  recommendation: string | null;
+  entity_type: string | null;
+  entity_id: string | null;
+  estimated_value: number | null;
+  status: ActionStatus;
+  created_at: string;
+  completed_at: string | null;
+  completed_by: string | null;
 }
 
-export interface OfferBanner {
-  id: number;
-  title: string;
-  subtitle?: string;
-  discount?: string;
-  cta: string;
-  bgGradient?: string;
-  image_url?: string;
-}
+// ============================ Computed / Views ============================
 
-// ===================== Computed / Views =====================
-
-export interface DailySummary {
-  appointments: number;
-  expectedRevenue: number;
-  todayRevenue: number;
-  completedCount: number;
-  avgBill: number;
-  newCustomers: number;
-  returningCustomers: number;
+export interface OverdueCustomer {
+  id: string;
+  name: string;
+  phone: string | null;
+  gap: number;
+  typicalInterval: number;
+  lifetimeValue: number;
+  risk: "LOW" | "MEDIUM" | "HIGH";
 }
 
 export interface NoShowRisk {
-  id: number;
-  customerId: number;
+  id: string;
+  customerId: string;
   customer: string;
   staff: string;
   price: number;
   at: string;
 }
 
-export interface EmptySlot {
-  id: number;
-  staffId: number;
-  staff: string;
-  fromLabel: string;
-  toLabel: string;
-  color: string;
-}
-
-export interface OverdueCustomer {
-  id: number;
-  name: string;
-  gap: number;
-  typicalInterval: number;
-  lifetimeValue: number;
-  risk: "HIGH" | "MEDIUM" | "LOW";
-}
-
-export interface MoneyLeftItem {
-  label: string;
-  amount: number;
-  note: string;
-}
-
 export interface StaffUtilization {
-  id: number;
+  id: string;
   name: string;
-  color: string;
+  color: string | null;
   utilization: number;
   todayBooked: number;
   revenue: number;
@@ -265,30 +268,18 @@ export interface CustomerSegment {
   items: Customer[];
 }
 
-export interface SalonOverview {
-  salonName: string;
-  today: DailySummary;
-  noShowRisks: NoShowRisk[];
-  overdue: OverdueCustomer[];
-  emptySlots: EmptySlot[];
-  moneyLeft: MoneyLeftItem[];
-  staffUtil: StaffUtilization[];
-  segments: CustomerSegment[];
-  conversations: number;
-}
+export type PaymentMethod = "cash" | "card" | "upi" | "online" | "other";
+export type PaymentStatus = "pending" | "paid" | "refunded" | "failed";
 
-// ===================== UI State =====================
-
-export type NavItem = {
+export interface Payment {
   id: string;
-  label: string;
-  icon: string;
-  hash: string;
-};
-
-export interface BranchOption {
-  id: number;
-  name: string;
-  address: string;
-  active?: boolean;
+  salon_id: string;
+  appointment_id: string | null;
+  customer_id: string | null;
+  amount: number;
+  method: PaymentMethod | null;
+  status: PaymentStatus;
+  transaction_ref: string | null;
+  paid_at: string | null;
+  created_at: string;
 }

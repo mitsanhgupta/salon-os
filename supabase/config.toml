@@ -1,0 +1,28 @@
+# Direktor — Supabase project configuration
+project_id = "asozctjkcctiyxyzvtwd"
+
+[api]
+enabled = true
+port = 5432
+schemas = ["public", "graphql_public"]
+graphql_enabled = false
+
+[db]
+port = 5432
+shadow_database_url = ""
+
+[db.pooler]
+enabled = false
+
+[auth]
+enabled = true
+disable_local_email_and_email_alias = false
+enable_email_provider_linking = false
+
+[auth.email]
+enable_confirmations = false
+double_confirm_patterns = "off"
+
+[realtime]
+enabled = true
+ip_version = "ipv6"

@@ -2,9 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
   transpilePackages: [],
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   images: {
     remotePatterns: [
       {
@@ -13,6 +10,18 @@ const nextConfig = {
       },
     ],
   },
+  // `/home` was never a real page. The role-aware hub lives at `/`
+  // (app/page.tsx). Redirect any stale bookmark/cached `/home` request there
+  // instead of returning 404.
+  async redirects() {
+    return [
+      {
+        source: "/home",
+        destination: "/",
+        permanent: true,
+      },
+    ];
+  },
 };
 
-module.exports = nextConfig;
+export default nextConfig;

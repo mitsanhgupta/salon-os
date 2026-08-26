@@ -17,6 +17,7 @@ out/
 # Build outputs
 dist/
 build/
+tsconfig.tsbuildinfo
 
 # IDE
 .idea/
